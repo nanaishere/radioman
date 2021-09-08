@@ -73,31 +73,32 @@ public class Radioman {
         this.currentVolume = currentVolume;
     }
 
-    public void upVolume(){
-        if (currentVolume >= maxVolume){
+    public void upVolume() {
+        if (currentVolume >= maxVolume) {
             this.currentVolume = maxVolume;
             return;
         }
         this.currentVolume++;
     }
 
-    public void downVolume(){
-        if (currentVolume <= minVolume){
+    public void downVolume() {
+        if (currentVolume <= minVolume) {
             this.currentVolume = minVolume;
             return;
         }
         this.currentVolume--;
     }
 
-    public void nextStation(){
-        if (currentStation == maxStation){
+    public void nextStation() {
+        if (currentStation == maxStation) {
             this.currentStation = minStation;
             return;
         }
         this.currentStation++;
     }
-    public void prevStation(){
-        if (currentStation == minStation){
+
+    public void prevStation() {
+        if (currentStation == minStation) {
             this.currentStation = maxStation;
             return;
         }

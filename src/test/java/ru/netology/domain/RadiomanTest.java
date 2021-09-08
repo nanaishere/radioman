@@ -200,6 +200,7 @@ public class RadiomanTest {
         int excepted = 2;
         assertEquals(excepted, radioman.getCurrentStation());
     }
+
     @org.junit.jupiter.api.Test
     void prevStationAfterMinStation() {
         Radioman radioman = new Radioman();
